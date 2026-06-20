@@ -1,6 +1,6 @@
 name: GitPusher
 
-on: push
+on: 
   push:
     branches: 
       - main
