@@ -21,13 +21,13 @@ DONE: **Video 1: GitHub Actions Tutorial – Basic Concepts & CI/CD Pipeline (Te
 - [x] Covers workflows, jobs, steps, runners, triggers. Best conceptual intro available.
 
 **Video 2: GitHub Actions CI/CD — Everything you need to know to get started (Fireship)**
-- Duration: ~12 min
-- Link: https://www.youtube.com/watch?v=mFFXuXjVgkU
-- Dense, fast overview. Watch after Nana to solidify the event model.
+- [x]  Duration: ~12 min
+- [x] Link: https://www.youtube.com/watch?v=mFFXuXjVgkU
+- [x] Dense, fast overview. Watch after Nana to solidify the event model.
 
 **Exercises:**
-- Sketch the workflow anatomy on paper: `event → workflow → job → step → action`
-- Identify 3 triggers you'd use in a real project
+- [x] Sketch the workflow anatomy on paper: `event → workflow → job → step → action`
+- [x] Identify 3 triggers you'd use in a real project
 
 ---
 
