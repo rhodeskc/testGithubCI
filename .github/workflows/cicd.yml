@@ -30,8 +30,11 @@ jobs:
           DEFAULT_BRANCH: main
           # To report GitHub Actions status checks
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SAVE_SUPER_LINTER_SUMMARY: true
+          # Only turn on the linters you want to validate against.
+          VALIDATE_ALL_CODEBASE: false
           VALIDATE_PYTHON_FLAKE8: true
-          VALIDATE_PYTHON_PYLINT: false
+          # VALIDATE_PYTHON_PYLINT: false
           VALIDATE_PYTHON_BLACK: true
 
   test:
