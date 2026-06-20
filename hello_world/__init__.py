@@ -7,4 +7,3 @@ class HelloClass:
             return "Hello world!"
         else:
             return f"Hello 2 {inName}"
-
