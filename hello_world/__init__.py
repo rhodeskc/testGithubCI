@@ -6,5 +6,5 @@ class HelloClass:
         if inName == "":
             return "Hello world!"
         else:
-            return f"Hello {inName}"
+            return f"Hello 2 {inName}"
 
