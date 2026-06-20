@@ -13,12 +13,12 @@ Testing github CI/CD. Learning strategy based off Claude. Will be deleted after 
 
 ### Morning · Core concepts (watch first, no skipping)
 
-*~1.5 hrs · Build the mental model before touching YAML*
+DONE: *~1.5 hrs · Build the mental model before touching YAML*
 
-**Video 1: GitHub Actions Tutorial – Basic Concepts & CI/CD Pipeline (TechWorld with Nana)**
-- Duration: ~32 min
-- Link: https://www.youtube.com/watch?v=R8_veQiYBjI
-- Covers workflows, jobs, steps, runners, triggers. Best conceptual intro available.
+DONE: **Video 1: GitHub Actions Tutorial – Basic Concepts & CI/CD Pipeline (TechWorld with Nana)**
+- [x] Duration: ~32 min
+- [x] Link: https://www.youtube.com/watch?v=R8_veQiYBjI
+- [x] Covers workflows, jobs, steps, runners, triggers. Best conceptual intro available.
 
 **Video 2: GitHub Actions CI/CD — Everything you need to know to get started (Fireship)**
 - Duration: ~12 min

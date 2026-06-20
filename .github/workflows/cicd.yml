@@ -1,0 +1,56 @@
+name: GitPusher
+
+on: push
+  push:
+    branches: 
+      - main
+      - 'feature/*'
+
+jobs:
+  linter:
+    name: Lint
+    runs-on: ubuntu-latest
+    permissions:
+      # contents permission to clone the repository
+      contents: read
+      packages: read
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v6
+        with:
+          # super-linter needs the full git history to get the
+          # list of files that changed across commits
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Super-linter
+        uses: super-linter/super-linter@v8
+        env:
+          DEFAULT_BRANCH: main
+          # To report GitHub Actions status checks
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          VALIDATE_PYTHON_FLAKE8: true
+          VALIDATE_PYTHON_PYLINT: false
+          VALIDATE_PYTHON_BLACK: true
+
+  test:
+    name: Python Unit Tests
+    needs: linter  # only runs on Lint completing successfully
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12" # Consider 3.12.x
+
+      # No dependencies at this point. Add back in as needed.
+      # - name: Install dependencies
+      #   run: pip install -r requirements.txt
+
+      - name: Run tests
+        run: python -m unittest discover -s hello_world/tests/
+
