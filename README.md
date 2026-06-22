@@ -28,6 +28,7 @@ DONE: **Video 1: GitHub Actions Tutorial – Basic Concepts & CI/CD Pipeline (Te
 **Exercises:**
 - [x] Sketch the workflow anatomy on paper: `event → workflow → job → step → action`
 - [x] Identify 3 triggers you'd use in a real project
+- [x] Write real project.
 
 ---
 
